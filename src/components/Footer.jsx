@@ -35,7 +35,7 @@ const footerAboutLinks = [
 
 const footerCustomerLinks = [
 	{
-		display: 'Chính sác đổi trả',
+		display: 'Chính sách đổi trả',
 		path: '/about',
 	},
 	{
@@ -50,7 +50,7 @@ const footerCustomerLinks = [
 
 const Footer = () => {
 	return (
-		<footer>
+		<footer className="footer">
 			<div className="container">
 				<Grid col={4} mdCol={2} smCol={1} gap={10}>
 					<div>
@@ -88,6 +88,18 @@ const Footer = () => {
 								</p>
 							))}
 						</div>
+					</div>
+					<div className="footer__about">
+						<p>
+							<Link to="/">
+								<img src={logo} className="footer__logo" alt="" />
+							</Link>
+						</p>
+						<p>
+							Bằng chính những trải nghiệm lâu dài và nghiên cứu tâm huyết, chúng tôi tin rằng
+							bằng việc đảm bảo sản phẩm chất lượng, giá cả hợp lý và dịch vụ chăm sóc vượt trội
+							sẽ là con đường giúp chúng tôi thực hiện sứ mệnh của mình.
+						</p>
 					</div>
 				</Grid>
 			</div>
