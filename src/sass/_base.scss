@@ -35,6 +35,7 @@ img {
 	max-width: 100%;
 }
 
+//Grid customize
 @each $color, $val in $colors {
 	.color-#{$color} {
 		color: $val;
@@ -66,6 +67,7 @@ img {
 		}
 	}
 }
+//Grid customize end
 
 .container {
 	width: 100%;
@@ -96,6 +98,7 @@ img {
 	}
 }
 
+//grid here
 .grid {
 	display: grid;
 }
